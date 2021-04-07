@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulario</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+<body>
+	<span id="mensaje"></span>
+	<form method="post" action="#" id="formulario">
+		<fieldset>
+			<legend>Formulario de Entrevista</legend>
+		<ul>
+			<li>
+				<label for="nombre">Nombre</label>
+				<input id="nombre" type="text" placeholder="Nombre" required="true"/> <br><br>
+			</li>
+            <li>
+				<label for="apellidos">Apellidos</label>
+				<input id="apellidos" type="text" placeholder="Apellidos" required="true"/> <br><br>
+			</li>
+			<li>
+				<label for="rut">RUT</label>
+				<input id="rut" type="text" placeholder="12345678k" required="true" pattern="[0-9,k,K]{9}" maxlength="9"/> <br><br>
+			</li>
+			<li>
+				<label for="email">Correo Electrónico</label>
+				<input id="email" type="email" placeholder="Correo Electrónico" required="true"/> <br><br>
+			</li>
+			<li>
+				<label for="telefono">Teléfono Móvil</label>
+				<input id="telefono" type="number" placeholder="+56..." required="true" maxlength="9"/> <br><br>
+			</li>
+			<li>
+				<label for="lenguaje">Selecciona 1 o más lenguajes de programación de su interés:</label><br>
+
+				<input id="lenguaje" type="checkbox" name="lenguaje1"/>
+                <label for="lenguaje1"> Python </label><br>
+
+                <input id="lenguaje" type="checkbox" name="lenguaje2"/>
+                <label for="lenguaje2"> Java </label><br>
+
+                <input id="lenguaje" type="checkbox" name="lenguaje3"/>
+                <label for="lenguaje3"> TypeScript </label><br>
+
+                <input id="lenguaje" type="checkbox" name="lenguaje4"/>
+                <label for="lenguaje4"> PHP </label><br>
+
+                <input id="lenguaje" type="checkbox" name="lenguaje5"/>
+                <label for="lenguaje5"> C# </label><br>
+
+                <input id="lenguaje" type="checkbox" name="lenguaje6"/>
+                <label for="lenguaje6"> C++ </label><br>
+			</li>
+            <li>
+				<label for="descripcion"> Descripción breve acerca de usted:</label> <br>
+				<textarea id="descripcion" rows="6" cols="50" maxlength="300" required></textarea>
+			</li>
+			<li>
+				<label for="conocimiento"> ¿Cuál es su nivel de conocimiento en programación?</label> <br>
+				<input type="range" id="conocimiento" name="conocimiento" min="0" max="100" value="0">
+			</li>
+			<li>
+				<label for="experiencia">¿Cuantos años de experiencia laboral tiene?</label> <br>
+				<input type="radio" name="experiencia"  value="radio1">
+                <label for="radio1">1</label>
+				<input type="radio" name="experiencia"  value="radio2">
+                <label for="radio2">2</label>
+                <input type="radio" name="experiencia"  value="radio3">
+                <label for="radio3">3</label>
+                <input type="radio" name="experiencia"  value="radio4">
+                <label for="radio4">4</label>
+                <input type="radio" name="experiencia"  value="radio5">
+                <label for="radio5">5</label> 
+                <br> <br>
+			</li>
+			
+			<button type="submit">Enviar Datos</button>
+            <input type="button" value="Limpiar Datos" onclick="limpiarDatos()">
+			
+		</ul>
+		</fieldset>
+
+	</form>
+	<!--JS-->
+	<script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>

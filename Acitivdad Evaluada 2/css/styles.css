@@ -1,0 +1,53 @@
+form
+{
+	margin: 0 auto;
+	width:100%;
+	padding: 1em;
+	border: 1px solid #0000ff;
+}
+
+form ul
+{
+	list-style-type: none; /*Quitar viñetas */
+	padding: 0px;
+	margin: 0px;
+}
+
+label
+{
+	display: inline-block;
+	width: 120px;
+	text-align: right;
+}
+
+input,select
+{
+	width: 50%;
+	height: 20px;
+	border: 1px solid #999;
+	padding: 3px;
+}
+
+textarea
+{
+	width: 50%;
+	height: 5em;
+}
+
+.button
+{
+	padding-left: 30%;
+    text-decoration: none;
+}
+
+button
+{
+	background-color: #0000ff;
+	color: #fff;
+	border: 0px;
+
+}
+
+#nombre{
+	color: blue;
+}
