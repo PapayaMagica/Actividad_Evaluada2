@@ -13,6 +13,16 @@ form ul
 	margin: 0px;
 }
 
+form input[type="text"] {
+	width: 80%;
+	height: 30px;
+  }
+  
+  form select {
+	width: 80%;
+	height: 30px;
+  }
+
 label
 {
 	display: inline-block;
